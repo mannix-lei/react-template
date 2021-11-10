@@ -1,0 +1,56 @@
+{
+    "root": true,
+    "extends": [
+        "react-app"
+    ],
+    "ignorePatterns": [
+        "scripts/*",
+        "config/*",
+        "build/*"
+    ],
+    "plugins": [],
+    "rules": {
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "max-lines": [
+            "error",
+            300
+        ],
+        "import/order": [
+            "error",
+            {
+                "groups": [
+                    [
+                        "builtin",
+                        "external"
+                    ],
+                    "internal",
+                    "parent",
+                    "sibling",
+                    "index"
+                ],
+                "newlines-between": "never"
+            }
+        ],
+        "react/jsx-key": [
+            "error"
+        ],
+        "space-before-blocks": "error",
+        "key-spacing": "error",
+        "react/jsx-uses-react": "off",
+        "react/react-in-jsx-scope": "off"
+    }
+}
